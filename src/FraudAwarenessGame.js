@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Users, AlertTriangle, Trophy, Clock, Star } from 'lucide-react';
+import { Users, AlertTriangle, Trophy, Clock, Star } from 'lucide-react';
 
 const LeaderboardView = ({ onBack }) => {
   // ... (existing state and department definitions)
@@ -13,7 +13,7 @@ const LeaderboardView = ({ onBack }) => {
     // Note: loadLeaderboard is no longer async, as localStorage is synchronous
     loadLeaderboard(); 
   }, []);
-  
+
    const departments = [
     'Customer Experience', 'IT', 'Technical Operations', 'Technical Services',
     'Finance', 'Human Resources', 'Legal', 'PPR', 'EFR', 'HSE', 'Corp Comms.', 'Commercial'
@@ -272,11 +272,10 @@ const FraudAwarenessGame = () => {
   const [teamSpeed, setTeamSpeed] = useState(0);
   const [decisions, setDecisions] = useState([]);
   const [startTime, setStartTime] = useState(null);
-  const [storyPath, setStoryPath] = useState('main');
+  //const [storyPath, setStoryPath] = useState('main');
   const [saveStatus, setSaveStatus] = useState('');
   
-  const logoBase64 = 'data:image/png;base64,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';
-
+  
   const departments = [
     'Customer Experience', 'IT', 'Technical Operations', 'Technical Services',
     'Finance', 'Human Resources', 'Legal', 'PPR', 'EFR', 'HSE', 'Corp Comms.', 'Commercial'
