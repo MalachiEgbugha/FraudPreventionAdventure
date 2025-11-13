@@ -272,7 +272,7 @@ const FraudAwarenessGame = () => {
   const [teamSpeed, setTeamSpeed] = useState(0);
   const [decisions, setDecisions] = useState([]);
   const [startTime, setStartTime] = useState(null);
-  //const [storyPath, setStoryPath] = useState('main');
+  const [storyPath, setStoryPath] = useState('main');
   const [saveStatus, setSaveStatus] = useState('');
   
   
