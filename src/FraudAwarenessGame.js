@@ -691,7 +691,7 @@ const FraudAwarenessGame = () => {
     if (gameState === 'playing' && !startTime) {
       setStartTime(Date.now());
     }
-  }, [gameState, startTime]);
+  }, [gameState, startTime, storyPath]);
 
   const handleStartGame = () => {
     const filledMembers = teamMembers.filter(m => m.trim() !== '');
