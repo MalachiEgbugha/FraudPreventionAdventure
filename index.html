@@ -495,7 +495,7 @@
         11: {
           id: 11,
           title: "The Day's End - Your Legacy at EKEDC",
-          description: "It's 8:00 PM. The sun has set on an extraordinary day at EKEDC. What began as a routine Wednesday morning transformed into a comprehensive battle against a sophisticated fraud operation. As you reflect on the day's events, one thing is crystal clear: Fraud prevention truly is a team effort, and today proved that those who refuse to sit on the sidelines can make all the difference. Your decisions throughout the day didn't just impact EKEDC - they influenced the entire Nigerian power sector's approach to fraud prevention. The question now is: What kind of impact did you make?",
+          description: "It's 8:00 PM. The sun has set on an extraordinary day at EKEDC. What began as a routine Wednesday morning transformed into a comprehensive battle against a sophisticated fraud operation. As you reflect on the day's events, one thing is crystal clear: Smart people + Smart Systems = Zero Fraud. Your decisions throughout the day, combined with EKEDC's fraud prevention systems, determined the outcome. When intelligent people leverage robust systems, fraud doesn't stand a chance. The question now is: What kind of impact did you make?",
           image: "🏆",
           choices: []
         }
@@ -790,13 +790,13 @@
           rating: "Vigilant Guardian", 
           color: "text-green-400", 
           stars: 4,
-          description: "Your proactive approach and collaborative spirit prevented major losses. EKEDC is more secure because you refused to sit on the sidelines."
+          description: "Your proactive approach and use of smart systems prevented major losses. EKEDC is more secure because you combined intelligence with the right tools."
         };
         if (points >= 50) return { 
           rating: "Aware Defender", 
           color: "text-blue-400", 
           stars: 3,
-          description: "You showed solid fraud awareness and learned valuable lessons. While there were challenges, you demonstrated that fraud prevention is indeed a team effort."
+          description: "You showed solid fraud awareness and learned valuable lessons. While there were challenges, you demonstrated that combining smart thinking with smart systems is the path to zero fraud."
         };
         if (points >= 20) return { 
           rating: "Learning Responder", 
@@ -808,7 +808,7 @@
           rating: "Needs Development", 
           color: "text-red-400", 
           stars: 1,
-          description: "Today's events highlighted critical gaps in fraud response. The good news? Every mistake is a learning opportunity. Never sit on the sidelines again."
+          description: "Today's events highlighted gaps in leveraging both smart thinking and smart systems. The good news? Every mistake is a learning opportunity. Remember: Smart people + Smart Systems = Zero Fraud."
         };
       };
 
@@ -840,7 +840,7 @@
                         It's Wednesday morning at EKEDC, and what seems like a routine day is about to become anything but ordinary. Your department will face a series of interconnected fraud attempts that will test your decision-making, collaboration skills, and fraud prevention expertise. Every choice you make will shape the story and determine the outcome.
                       </p>
                       <p className="text-gray-700 font-semibold">
-                        Theme: "Fraud Prevention is a Team Effort - Don't Sit on the Sidelines"
+                        Theme: "Smart people + Smart Systems = Zero Fraud"
                       </p>
                     </div>
                   </div>
@@ -1061,14 +1061,24 @@
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-6 mb-6">
-                  <h3 className="font-bold text-2xl mb-3">Remember:</h3>
-                  <p className="text-xl mb-4">
-                    "Fraud Prevention is a Team Effort - Don't Sit on the Sidelines"
-                  </p>
-                  <p className="text-blue-100 leading-relaxed">
-                    Today's adventure showed that protecting EKEDC from fraud requires vigilance, collaboration, and decisive action from every department. Whether you prevented a catastrophe or learned valuable lessons, remember that every team member plays a crucial role in our security. Stay alert, communicate across departments, and never hesitate to report suspicious activities!
-                  </p>
+                <div className="text-white rounded-lg p-6 mb-6 border-4 border-yellow-400 shadow-xl" style={{background: '#f50a0a'}}>
+                  <div className="flex items-start">
+                    <div className="text-4xl mr-4">🎉</div>
+                    <div>
+                      <h3 className="font-black text-4xl mb-3">Join the Team Bonding Event!</h3>
+                      <p className="text-lg mb-3 font-semibold">
+                        📅 Friday, 21st November 2025
+                      </p>
+                      <div className="bg-white bg-opacity-20 rounded-lg p-4 mb-3">
+                        <p className="text-white leading-relaxed">
+                          To join the Team Bonding Event on Friday, 21st November 2025, <strong>Find the hidden registration link on SharePoint</strong> (<strong>OC USERGUIDE, MANUALS, TIPS, PROCESSFLOWS</strong>) - its location changes daily.
+                        </p>
+                      </div>
+                      <p className="text-yellow-200 font-bold text-lg">
+                        ⚡ Only the first 60 to register each day will secure a spot before the day's deadline!
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 {saveStatus && (
@@ -1085,9 +1095,7 @@
                   </div>
                 )}
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                
-
+                <div className="flex justify-center">
                   <button
                     onClick={handlePlayAgain}
                     className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition-colors flex items-center justify-center"
